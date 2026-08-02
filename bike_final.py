@@ -30,8 +30,8 @@ import requests
 import tempfile
 from FreeCAD import Base
 
-App.newDocument("bike_v4")
-App.setActiveDocument("bike_v4")
+App.newDocument("bike_final")
+App.setActiveDocument("bike_final")
 os.chdir(os.path.dirname(__file__))
 
 yokeTool = False
@@ -140,25 +140,6 @@ else:
    boltsLDrop = False
    print(DOName + 'BoltsL.step not found')
 
-App.ActiveDocument.addObject("Part::Revolution","Headset")
-
-bez0 = Part.BezierCurve()
-bez0.setPoles([Base.Vector(25.0,0.0,0.0), Base.Vector(30.5,0.0,0.0), Base.Vector(30.5,-6.0,0.0)])
-bez1 = Part.BezierCurve()
-bez1.setPoles([Base.Vector(30.5,-6.0,0.0), Base.Vector(30.5,-12.0,0.0), Base.Vector(25.0,-12.0,0.0)])
-headsetProfileWire0=Part.Wire([Part.makeLine((22.5,0.0,0),(25.0,0.0,0)),bez0.toShape(),bez1.toShape(),Part.makeLine((25.0,-12.0,0),(22.5,-12.0,0)),Part.makeLine((22.5,-12.0,0),(22.5,0.0,0.0) )])
-
-
-obj=App.ActiveDocument.addObject('Part::Feature','HS_profile')
-obj.Shape=headsetProfileWire0
-App.ActiveDocument.Headset.Source = App.ActiveDocument.HS_profile
-App.ActiveDocument.Headset.Axis = (0,1,0)
-App.ActiveDocument.Headset.Base = (0,0,0)
-App.ActiveDocument.Headset.Angle = 360.0
-App.ActiveDocument.Headset.Solid = True
-App.ActiveDocument.Headset.Symmetric = False
-App.ActiveDocument.Headset.Placement = Base.Placement(Base.Vector(1233.425,737.083,0),Base.Rotation(18.2,0,0))
-App.ActiveDocument.HS_profile.Visibility = False
 App.ActiveDocument.addObject("Part::Revolution","HT_tube")
 
 htbackProfileWire0=Part.Wire([Part.makeLine((1233.425,737.083,0),(1209.675,729.275,0)),Part.makeLine((1209.675,729.275,0),(1208.114,734.025,0)),Part.makeLine((1208.114,734.025,0),(1206.849,741.714,0)),Part.makeLine((1206.849,741.714,0),(1174.178,841.081,0)),Part.makeLine((1174.178,841.081,0),(1170.633,848.021,0)),Part.makeLine((1170.633,848.021,0),(1169.072,852.771,0)),Part.makeLine((1169.072,852.771,0),(1192.821,860.58,0)),Part.makeLine((1192.821,860.58,0),(1233.425,737.083,0.0) )])
@@ -191,16 +172,16 @@ App.activeDocument().addObject("Part::Cut","HT_Finished")
 App.ActiveDocument.ActiveObject.Base=App.activeDocument().HT_tube
 App.ActiveDocument.ActiveObject.Tool=App.activeDocument().HT_cut
 obj=App.ActiveDocument.addObject("Part::Feature","dCS3D_CL")
-WireCLdCS=Part.makeLine((479.55,321.89, 71.5), (813.125,276.291, 19.136))
+WireCLdCS=Part.makeLine((479.55,321.89, 74.5), (813.125,276.291, 18.93))
 obj.Shape=WireCLdCS
 profiledCS1=App.ActiveDocument.addObject("Part::Feature","dCS_XSec1")
-profiledCS1.Shape=Part.makeCircle(6.25, Base.Vector(479.55,321.89, 71.5), Base.Vector(0.991, -0.135, -0.166))
+profiledCS1.Shape=Part.makeCircle(8.0, Base.Vector(479.55,321.89, 74.5), Base.Vector(0.991, -0.135, -0.176))
 profiledCS2=App.ActiveDocument.addObject("Part::Feature","dCS_XSec2")
-profiledCS2.Shape=Part.Ellipse(Base.Vector(709.463,305.601, 32.808), Base.Vector(708.758,290.739,40.697), Base.Vector(707.431,290.739, 32.808)).toShape()
+profiledCS2.Shape=Part.Ellipse(Base.Vector(709.463,305.601, 33.439), Base.Vector(708.837,290.739,41.315), Base.Vector(707.431,290.739, 33.439)).toShape()
 profiledCS3=App.ActiveDocument.addObject("Part::Feature","dCS_XSec3")
-profiledCS3.Shape=Part.Ellipse(Base.Vector(770.175,297.302, 22.5), Base.Vector(769.471,282.44,30.389), Base.Vector(768.144,282.44, 22.5)).toShape()
+profiledCS3.Shape=Part.Ellipse(Base.Vector(770.175,297.302, 22.5), Base.Vector(769.549,282.44,30.375), Base.Vector(768.144,282.44, 22.5)).toShape()
 profiledCS4=App.ActiveDocument.addObject("Part::Feature","dCS_XSec4")
-profiledCS4.Shape=Part.Ellipse(Base.Vector(795.682,293.815, 18.169), Base.Vector(794.977,278.953,26.058), Base.Vector(793.65,278.953, 18.169)).toShape()
+profiledCS4.Shape=Part.Ellipse(Base.Vector(795.682,293.815, 17.904), Base.Vector(795.056,278.953,25.78), Base.Vector(793.65,278.953, 17.904)).toShape()
 if dropTool:
    sweepdCS=App.ActiveDocument.addObject('Part::Sweep','dCS_tube1')
 else:
@@ -223,16 +204,16 @@ App.activeDocument().dCS_XSec2.Visibility = False
 App.activeDocument().dCS_XSec3.Visibility = False
 App.activeDocument().dCS_XSec4.Visibility = False
 obj=App.ActiveDocument.addObject("Part::Feature","dSS3D_CL")
-WireCLdSS=Part.makeLine((384.089,412.555, 71.5), (660.355,719.367, 17.0))
+WireCLdSS=Part.makeLine((384.35,415.544, 74.5), (660.355,719.367, 16.0))
 obj.Shape=WireCLdSS
 profiledSS1=App.ActiveDocument.addObject("Part::Feature","dSS_XSec1")
-profiledSS1.Shape=Part.makeCircle(6.25, Base.Vector(384.089,412.555, 71.5), Base.Vector(0.669, 0.743, -0.131))
+profiledSS1.Shape=Part.makeCircle(6.25, Base.Vector(384.35,415.544, 74.5), Base.Vector(0.672, 0.74, -0.141))
 profiledSS2=App.ActiveDocument.addObject("Part::Feature","dSS_XSec2")
-profiledSS2.Shape=Part.makeCircle(8.0, Base.Vector(551.375,598.338, 38.499), Base.Vector(0.669, 0.743, -0.131))
+profiledSS2.Shape=Part.makeCircle(8.0, Base.Vector(552.452,600.589, 38.87), Base.Vector(0.672, 0.74, -0.141))
 profiledSS3=App.ActiveDocument.addObject("Part::Feature","dSS_XSec3")
-profiledSS3.Shape=Part.makeCircle(8.0, Base.Vector(660.355,719.367, 17.0), Base.Vector(0.669, 0.743, -0.131))
+profiledSS3.Shape=Part.makeCircle(8.0, Base.Vector(660.355,719.367, 16.0), Base.Vector(0.672, 0.74, -0.141))
 profiledSS4=App.ActiveDocument.addObject("Part::Feature","dSS_XSec4")
-profiledSS4.Shape=Part.makeCircle(8.0, Base.Vector(660.355,719.367, 17.0), Base.Vector(0.669, 0.743, -0.131))
+profiledSS4.Shape=Part.makeCircle(8.0, Base.Vector(660.355,719.367, 16.0), Base.Vector(0.672, 0.74, -0.141))
 if dropTool:
    sweepdSS=App.ActiveDocument.addObject('Part::Sweep','dSS_tube1')
 else:
@@ -255,16 +236,16 @@ App.activeDocument().dSS_XSec2.Visibility = False
 App.activeDocument().dSS_XSec3.Visibility = False
 App.activeDocument().dSS_XSec4.Visibility = False
 obj=App.ActiveDocument.addObject("Part::Feature","nCS3D_CL")
-WireCLnCS=Part.makeLine((479.55,321.89, -71.5), (813.125,276.291, -19.136))
+WireCLnCS=Part.makeLine((479.55,321.89, -74.5), (813.125,276.291, -18.93))
 obj.Shape=WireCLnCS
 profilenCS1=App.ActiveDocument.addObject("Part::Feature","nCS_XSec1")
-profilenCS1.Shape=Part.makeCircle(6.25, Base.Vector(479.55,321.89, -71.5), Base.Vector(0.991, -0.135, 0.166))
+profilenCS1.Shape=Part.makeCircle(8.0, Base.Vector(479.55,321.89, -74.5), Base.Vector(0.991, -0.135, 0.176))
 profilenCS2=App.ActiveDocument.addObject("Part::Feature","nCS_XSec2")
-profilenCS2.Shape=Part.Ellipse(Base.Vector(709.463,305.601, -32.808), Base.Vector(706.104,290.739,-24.919), Base.Vector(707.431,290.739, -32.808)).toShape()
+profilenCS2.Shape=Part.Ellipse(Base.Vector(709.463,305.601, -33.439), Base.Vector(706.025,290.739,-25.564), Base.Vector(707.431,290.739, -33.439)).toShape()
 profilenCS3=App.ActiveDocument.addObject("Part::Feature","nCS_XSec3")
-profilenCS3.Shape=Part.Ellipse(Base.Vector(770.175,297.302, -22.5), Base.Vector(766.816,282.44,-14.611), Base.Vector(768.144,282.44, -22.5)).toShape()
+profilenCS3.Shape=Part.Ellipse(Base.Vector(770.175,297.302, -22.5), Base.Vector(766.738,282.44,-14.625), Base.Vector(768.144,282.44, -22.5)).toShape()
 profilenCS4=App.ActiveDocument.addObject("Part::Feature","nCS_XSec4")
-profilenCS4.Shape=Part.Ellipse(Base.Vector(795.682,293.815, -18.169), Base.Vector(792.323,278.953,-10.28), Base.Vector(793.65,278.953, -18.169)).toShape()
+profilenCS4.Shape=Part.Ellipse(Base.Vector(795.682,293.815, -17.904), Base.Vector(792.244,278.953,-10.029), Base.Vector(793.65,278.953, -17.904)).toShape()
 if dropTool:
    sweepnCS=App.ActiveDocument.addObject('Part::Sweep','nCS_tube1')
 else:
@@ -287,16 +268,16 @@ App.activeDocument().nCS_XSec2.Visibility = False
 App.activeDocument().nCS_XSec3.Visibility = False
 App.activeDocument().nCS_XSec4.Visibility = False
 obj=App.ActiveDocument.addObject("Part::Feature","nSS3D_CL")
-WireCLnSS=Part.makeLine((384.089,412.555, -71.5), (660.355,719.367, -17.0))
+WireCLnSS=Part.makeLine((384.35,415.544, -74.5), (660.355,719.367, -16.0))
 obj.Shape=WireCLnSS
 profilenSS1=App.ActiveDocument.addObject("Part::Feature","nSS_XSec1")
-profilenSS1.Shape=Part.makeCircle(6.25, Base.Vector(384.089,412.555, -71.5), Base.Vector(0.669, 0.743, 0.131))
+profilenSS1.Shape=Part.makeCircle(6.25, Base.Vector(384.35,415.544, -74.5), Base.Vector(0.672, 0.74, 0.141))
 profilenSS2=App.ActiveDocument.addObject("Part::Feature","nSS_XSec2")
-profilenSS2.Shape=Part.makeCircle(8.0, Base.Vector(551.375,598.338, -38.499), Base.Vector(0.669, 0.743, 0.131))
+profilenSS2.Shape=Part.makeCircle(8.0, Base.Vector(552.452,600.589, -38.87), Base.Vector(0.672, 0.74, 0.141))
 profilenSS3=App.ActiveDocument.addObject("Part::Feature","nSS_XSec3")
-profilenSS3.Shape=Part.makeCircle(8.0, Base.Vector(660.355,719.367, -17.0), Base.Vector(0.669, 0.743, 0.131))
+profilenSS3.Shape=Part.makeCircle(8.0, Base.Vector(660.355,719.367, -16.0), Base.Vector(0.672, 0.74, 0.141))
 profilenSS4=App.ActiveDocument.addObject("Part::Feature","nSS_XSec4")
-profilenSS4.Shape=Part.makeCircle(8.0, Base.Vector(660.355,719.367, -17.0), Base.Vector(0.669, 0.743, 0.131))
+profilenSS4.Shape=Part.makeCircle(8.0, Base.Vector(660.355,719.367, -16.0), Base.Vector(0.672, 0.74, 0.141))
 if dropTool:
    sweepnSS=App.ActiveDocument.addObject('Part::Sweep','nSS_tube1')
 else:
@@ -318,10 +299,10 @@ if dropTool:
 App.activeDocument().nSS_XSec2.Visibility = False
 App.activeDocument().nSS_XSec3.Visibility = False
 App.activeDocument().nSS_XSec4.Visibility = False
-myssB = Part.makeCylinder(8.0, 58.869, Base.Vector(597.323,649.366,29.435), Base.Vector(0.0,0.0,-58.869))
+myssB = Part.makeCylinder(8.0, 58.858, Base.Vector(596.997,649.623,29.429), Base.Vector(0.0,0.0,-58.858))
 obj=App.ActiveDocument.addObject('Part::Feature','ssBridge')
 obj.Shape=myssB
-mycsB = Part.makeCylinder(9.0, 56.66, Base.Vector(733.808,287.134,28.33), Base.Vector(0.0,0.0,-56.66))
+mycsB = Part.makeCylinder(9.0, 57.374, Base.Vector(733.808,287.134,28.687), Base.Vector(0.0,0.0,-57.374))
 obj=App.ActiveDocument.addObject('Part::Feature','csBridge')
 obj.Shape=mycsB
 profileDT1=App.ActiveDocument.addObject("Part::Feature","DT_XSec1")
@@ -383,10 +364,10 @@ obj.Shape=myBBid
 App.activeDocument().addObject("Part::Cut","BB")
 App.ActiveDocument.ActiveObject.Base=App.activeDocument().BBGearBoxCut
 App.ActiveDocument.ActiveObject.Tool=App.activeDocument().BBid
-profile=Part.makeCircle(15.8, Base.Vector(0,0,0), Base.Vector(1,0,0))
+profile=Part.makeCircle(13.6, Base.Vector(0,0,0), Base.Vector(1,0,0))
 profile = Part.Wire(profile)
 profile = Part.Face(profile)
-profile = profile.extrude(Base.Vector(-350.0,0,0))
+profile = profile.extrude(Base.Vector(-290.0,0,0))
 profile.rotate(Base.Vector(0,0,0), Base.Vector(0,0,1),106.8)
 profile.translate(Base.Vector(606.621,897.341, 0.0))
 obj=App.ActiveDocument.addObject("Part::Feature","SPost_extrude")
@@ -740,135 +721,4 @@ App.ActiveDocument.ActiveObject.Tool=App.activeDocument().FCut
 App.activeDocument().addObject("Part::MultiCommon","TIRESWF")
 App.activeDocument().TIRESWF.Shapes = [App.activeDocument().TireF,App.activeDocument().FCut]
 App.ActiveDocument.recompute()
-Gui.getDocument('bike_v4').getObject('WBbossDrilledSEATTUBEm0').ShapeColor=(1.0,1.0,1.0)
-Gui.getDocument('bike_v4').getObject('WBbossDrilledSEATTUBEm0').Transparency=0
-Gui.getDocument('bike_v4').getObject('WBbossDrilledDOWNTUBEm0').ShapeColor=(1.0,1.0,1.0)
-Gui.getDocument('bike_v4').getObject('WBbossDrilledDOWNTUBEm0').Transparency=0
-Gui.getDocument('bike_v4').getObject('HT_Finished').ShapeColor=(1.0,1.0,1.0)
-Gui.getDocument('bike_v4').getObject('HT_Finished').Transparency=0
-Gui.getDocument('bike_v4').getObject('ST_tube_trimmed').ShapeColor=(1.0,1.0,1.0)
-Gui.getDocument('bike_v4').getObject('ST_tube_trimmed').Transparency=0
-Gui.getDocument('bike_v4').getObject('DT_tube_trimmed').ShapeColor=(1.0,1.0,1.0)
-Gui.getDocument('bike_v4').getObject('DT_tube_trimmed').Transparency=0
-Gui.getDocument('bike_v4').getObject('TT_tube_trimmed').ShapeColor=(1.0,1.0,1.0)
-Gui.getDocument('bike_v4').getObject('TT_tube_trimmed').Transparency=0
-Gui.getDocument('bike_v4').getObject('dSS_tube_trimmed').ShapeColor=(1.0,1.0,1.0)
-Gui.getDocument('bike_v4').getObject('dSS_tube_trimmed').Transparency=0
-Gui.getDocument('bike_v4').getObject('nSS_tube_trimmed').ShapeColor=(1.0,1.0,1.0)
-Gui.getDocument('bike_v4').getObject('nSS_tube_trimmed').Transparency=0
-Gui.getDocument('bike_v4').getObject('ssBridge').ShapeColor=(1.0,1.0,1.0)
-Gui.getDocument('bike_v4').getObject('ssBridge').Transparency=0
-Gui.getDocument('bike_v4').getObject('dCS_tube_trimmed').ShapeColor=(1.0,1.0,1.0)
-Gui.getDocument('bike_v4').getObject('dCS_tube_trimmed').Transparency=0
-Gui.getDocument('bike_v4').getObject('nCS_tube_trimmed').ShapeColor=(1.0,1.0,1.0)
-Gui.getDocument('bike_v4').getObject('nCS_tube_trimmed').Transparency=0
-Gui.getDocument('bike_v4').getObject('csBridge').ShapeColor=(1.0,1.0,1.0)
-Gui.getDocument('bike_v4').getObject('csBridge').Transparency=0
-Gui.getDocument('bike_v4').getObject('BB').ShapeColor=(1.0,1.0,1.0)
-Gui.getDocument('bike_v4').getObject('BB').Transparency=0
-Gui.getDocument('bike_v4').getObject('Headset').ShapeColor=(0.8,0.0,0.2)
-Gui.getDocument('bike_v4').getObject('Headset').Transparency=0
-if dropR:
-   Gui.getDocument('bike_v4').getObject('DropoutR').ShapeColor=(1.0,1.0,1.0)
-   Gui.getDocument('bike_v4').getObject('DropoutR').Transparency=0
-if dropL:
-   Gui.getDocument('bike_v4').getObject('DropoutL').ShapeColor=(1.0,1.0,1.0)
-   Gui.getDocument('bike_v4').getObject('DropoutL').Transparency=0
-if insertDropR:
-   Gui.getDocument('bike_v4').getObject('DropoutInsertR').ShapeColor=(0.003921569,0.003921569,0.003921569)
-   Gui.getDocument('bike_v4').getObject('DropoutInsertR').Transparency=0
-if insertDropL:
-   Gui.getDocument('bike_v4').getObject('DropoutInsertL').ShapeColor=(0.003921569,0.003921569,0.003921569)
-   Gui.getDocument('bike_v4').getObject('DropoutInsertL').Transparency=0
-if boltsLDrop:
-   Gui.getDocument('bike_v4').getObject('DropoutBoltsL').ShapeColor=(0.6,0.6,0.6)
-   Gui.getDocument('bike_v4').getObject('DropoutBoltsL').Transparency=0
-if boltsRDrop:
-   Gui.getDocument('bike_v4').getObject('DropoutBoltsR').ShapeColor=(0.6,0.6,0.6)
-   Gui.getDocument('bike_v4').getObject('DropoutBoltsR').Transparency=0
-Gui.getDocument('bike_v4').getObject('Seatpost_clamp_finished').ShapeColor=(0.2,0.2,0.2)
-Gui.getDocument('bike_v4').getObject('Seatpost_clamp_finished').Transparency=0
-Gui.getDocument('bike_v4').getObject('Tire_R').ShapeColor=(0.25882354,0.24313726,0.24313726)
-Gui.getDocument('bike_v4').getObject('Tire_R').Transparency=0
-Gui.getDocument('bike_v4').getObject('Tire_F').ShapeColor=(0.25882354,0.24313726,0.24313726)
-Gui.getDocument('bike_v4').getObject('Tire_F').Transparency=0
-Gui.getDocument('bike_v4').getObject('TIRESWR').ShapeColor=(0.15686275,0.15294118,0.15294118)
-Gui.getDocument('bike_v4').getObject('TIRESWR').Transparency=0
-Gui.getDocument('bike_v4').getObject('TIRESWF').ShapeColor=(0.15686275,0.15294118,0.15294118)
-Gui.getDocument('bike_v4').getObject('TIRESWF').Transparency=0
-Gui.getDocument('bike_v4').getObject('RIMR').ShapeColor=(0.003921569,0.003921569,0.003921569)
-Gui.getDocument('bike_v4').getObject('RIMR').Transparency=0
-Gui.getDocument('bike_v4').getObject('RIMF').ShapeColor=(0.003921569,0.003921569,0.003921569)
-Gui.getDocument('bike_v4').getObject('RIMF').Transparency=0
-Gui.getDocument('bike_v4').getObject('RIMSWR').ShapeColor=(0.003921569,0.003921569,0.003921569)
-Gui.getDocument('bike_v4').getObject('RIMSWR').Transparency=0
-Gui.getDocument('bike_v4').getObject('RIMSWF').ShapeColor=(0.003921569,0.003921569,0.003921569)
-Gui.getDocument('bike_v4').getObject('RIMSWF').Transparency=0
-Gui.SendMsgToActiveView("ViewFit")
-
-# --- jig reference tubes, parallel to seat tube ---
-ST_dir = Base.Vector(-0.2890318, 0.9573195, 0.0)
-DummyDia = 6.0
-DummyLen = 500.0
-
-refs = {
-    "JigRef_RearAxle": Base.Vector(365.0,    355.0,   0.0),
-    "JigRef_HT_btm":   Base.Vector(1233.425, 737.083, 0.0),
-    "JigRef_HT_top":   Base.Vector(1192.821, 860.58,  0.0),
-}
-
-for name, pt in refs.items():
-    start = pt - ST_dir * (DummyLen / 2.0)
-    o = App.ActiveDocument.addObject("Part::Feature", name)
-    o.Shape = Part.makeCylinder(DummyDia/2.0, DummyLen, start, ST_dir)
-    Gui.ActiveDocument.getObject(name).ShapeColor = (0.9, 0.25, 0.1)
-    Gui.ActiveDocument.getObject(name).Transparency = 30
-
-App.ActiveDocument.recompute()
-
-
-doc = App.ActiveDocument
-doc.recompute()
-
-jig = doc.addObject("App::Part", "JigOrientation")
-for o in [x for x in doc.Objects if not x.InList and x is not jig]:
-    jig.addObject(o)
-
-BB = Base.Vector(793.309, 279.0, 0.0)
-jig.Placement = App.Placement(
-    Base.Vector(0, 0, 0),                          # or -BB to put BB at origin
-    Base.Rotation(Base.Vector(0, 0, 1), -16.8),
-    BB                                             # rotate about this point
-)
-doc.recompute()
-
-
-import Part
-doc = App.ActiveDocument
-
-BB  = Base.Vector(793.309, 279.0, 0.0)
-ROT = Base.Rotation(Base.Vector(0, 0, 1), -16.8)
-
-refs = {
-    "RearAxle": Base.Vector(365.0,    355.0,   0.0),
-    "HT_btm":   Base.Vector(1233.425, 737.083, 0.0),
-    "HT_top":   Base.Vector(1192.821, 860.58,  0.0),
-}
-
-hits = {}
-for name, p in refs.items():
-    q = ROT.multVec(p - BB)
-    hits[name] = Base.Vector(q.x, 0.0, 0.0)
-    print("%-9s  pt (%9.3f, %9.3f)   hit x = %9.3f" % (name, q.x, q.y, q.x))
-
-xs = [v.x for v in hits.values()]
-ln = doc.addObject("Part::Feature", "JigRef_Horizontal")
-ln.Shape = Part.makeLine(Base.Vector(min(xs)-60, 0, 0), Base.Vector(max(xs)+60, 0, 0))
-
-for name, v in hits.items():
-    m = doc.addObject("Part::Feature", "JigHit_" + name)
-    m.Shape = Part.makeSphere(4.0, v)
-    Gui.ActiveDocument.getObject(m.Name).ShapeColor = (0.1, 0.5, 0.9)
-
-doc.recompute()
 Gui.SendMsgToActiveView("ViewFit")
