@@ -3,6 +3,15 @@
 
 parts: 
 
+- BB
+- Tubing 
+- Rear dropouts
+- Front dropouts
+- Steerer
+- Headset
+- EBB
+- Gates sprockets and crankset 
+- Hubs
 
 stuff already done: 
 - 26 - 27 /07: Mittered, bored and faced BB from McMaster blank 
@@ -56,7 +65,13 @@ jig setup:
 Chainstay setup: 
 
 to do: 
-
-to buy:  
+ 
 
 to figure out: 
+- cables & internal routing
+- wheels : rims, spokes, tires, & mudguards
+- bosses - how many & where they should go
+- fork, fork blades and how that will work with disc brakes 
+- seat tube reamer / facer 
+- rohbox 
+- dynamos 
