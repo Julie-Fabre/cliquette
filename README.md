@@ -1,5 +1,6 @@
-# cliquette
-made in grenoble with lots of love and sweat.
+# cliquette <img width="50" height="35" alt="image" src="https://github.com/user-attachments/assets/5fc1aa46-d0dd-4e42-9a4e-417871007243" />
+
+made in grenoble with lots of love, sweat and flux.
 currently hibernating.
 
 parts: 
@@ -20,6 +21,11 @@ parts:
 - EBB
 - Gates sprockets and crankset 
 - Hubs
+
+good resources:
+- brazing: https://www.youtube.com/watch?v=OjRMbBl_Tbs, https://www.youtube.com/watch?v=fzI3QHfZPUs, https://www.youtube.com/watch?v=Y2CnJ9lmlQo
+- oxy-propane info: https://noviceframebuilder.co.uk/personal-articles/oxy-propane-brazing-update-3/, https://www.bikeforums.net/framebuilders/1187246-propane-flame.html, [oxy acetlyene] https://thejimbosliceworkshop.com/temperature-of-oxy-acetylene-flame/, 
+- start-to-finish bike building: https://www.youtube.com/watch?v=iDx8c7Tq4PY&list=PLUJnSFSlakCKcqDTKFwkHSVIxR1PRioMY
 
 stuff already done: 
 - 26 - 27 /07: Mittered, bored and faced BB from McMaster blank 
@@ -91,4 +97,5 @@ to figure out:
 - fork, fork blades and how that will work with disc brakes 
 - seat tube reamer / facer 
 - r-box (roh) 
-- dynamos 
+- dynamos
+- badge? name plate? paintjob?  
