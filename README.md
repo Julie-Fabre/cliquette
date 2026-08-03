@@ -65,8 +65,16 @@ jig setup:
 
 Chainstay setup: 
 
-to do: 
- 
+to do next: 
+ - hole in seatstays for brazing 
+ - tack, NS / Brass / Silver braze chainstays
+ - Face and ream BB
+ - Check + fix alignement 
+ - Miter seatstays to fit 
+ - tack, NS / Brass / Silver braze seatstays
+ - build wheel 
+ - bridge bosses 
+ - bridges for seatstays and chainstays to fit 
 
 to figure out: 
 - cables & internal routing
