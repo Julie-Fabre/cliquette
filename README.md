@@ -78,10 +78,10 @@ to do next:
  - bridges for seatstays and chainstays to fit 
 
 to figure out: 
-- cables & internal routing
-- wheels : rims, spokes, tires, & mudguards
+- cables & internal routing. jagwire? 
+- wheels : rims (H PLUS SON TB14 36holes?, Velocity Aero Disc? ($$$)), spokes (sapim R-compatible), tires, & mudguards
 - bosses - how many & where they should go
 - fork, fork blades and how that will work with disc brakes 
 - seat tube reamer / facer 
-- rohbox 
+- r-box (roh) 
 - dynamos 
