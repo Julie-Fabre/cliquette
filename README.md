@@ -1,4 +1,5 @@
-# cliquette
+# cliquette <img width="50" height="35" alt="image" src="https://github.com/user-attachments/assets/5fc1aa46-d0dd-4e42-9a4e-417871007243" />
+
 made in grenoble with lots of love, sweat and flux.
 currently hibernating.
 
