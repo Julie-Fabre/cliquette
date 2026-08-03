@@ -1,5 +1,5 @@
 # cliquette
-made in grenoble with lots of love and sweat.
+made in grenoble with lots of love, sweat and flux.
 currently hibernating.
 
 parts: 
