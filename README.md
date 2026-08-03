@@ -90,4 +90,5 @@ to figure out:
 - fork, fork blades and how that will work with disc brakes 
 - seat tube reamer / facer 
 - r-box (roh) 
-- dynamos 
+- dynamos
+- badge? name plate? paintjob?  
