@@ -4,8 +4,15 @@ currently hibernating.
 
 parts: 
 
-- BB
-- Tubing 
+- BB: McMaster 89955K601 Easy-to-Weld 4130 Alloy Steel Round Tube, 0.188" Wall Thickness, 2" OD, 1 Foot Long
+- Tubing :
+    - TT ZONM11560
+    - DT ZONL12670001
+    - ST ZON113640	
+    - Seatstays ZON615560 x2
+    - Chainstays ZON114OV425 x2
+    - HT HT2010 
+    - Seatclamp ZSC300
 - Rear dropouts
 - Front dropouts
 - Steerer
