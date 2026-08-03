@@ -98,4 +98,5 @@ to figure out:
 - seat tube reamer / facer 
 - r-box (roh) 
 - dynamos
-- badge? name plate? paintjob?  
+- badge? name plate? paintjob?
+- rust protection inside of tubes: exyra long straws to put on end of rust protector spray can https://www.amazon.com/Replacement-Straws-Flexible-Plastic-Extension/dp/B09K3T496C?th=1, https://www.youtube.com/watch?v=3Yi6cjuqVHA
