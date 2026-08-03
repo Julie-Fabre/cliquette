@@ -1,6 +1,6 @@
 # cliquette
-made in grenoble with lots of love and sweat ß
-[currently hibernating]
+made in grenoble with lots of love and sweat.
+currently hibernating.
 
 parts: 
 
