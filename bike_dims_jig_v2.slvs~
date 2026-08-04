@@ -430,7 +430,7 @@ Param.h.v.=00180011
 AddParam
 
 Param.h.v.=00180013
-Param.val=-0.00000000000000000000
+Param.val=0.00000000000000000000
 AddParam
 
 Param.h.v.=00180014
@@ -454,7 +454,7 @@ Param.val=0.35299257790988697314
 AddParam
 
 Param.h.v.=40000038
-Param.val=0.13656282540216294064
+Param.val=0.13656282540216299615
 AddParam
 
 Param.h.v.=40000046
@@ -1251,7 +1251,7 @@ Entity.h.v=00180002
 Entity.type=2001
 Entity.construction=1
 Entity.workplane.v=80020000
-Entity.actPoint.x=-0.00000000000000000000
+Entity.actPoint.x=0.00000000000000000000
 Entity.actPoint.y=-15.00000000000000000000
 Entity.actVisible=1
 AddEntity

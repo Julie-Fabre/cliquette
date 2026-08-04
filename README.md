@@ -58,12 +58,13 @@ stuff already done:
 
 - 31/07: Practice brazing: tube bends before braze snaps - that's good!; NS + brass fillet brazed BB-DT, checked alignement and bent tube back into shape; holes in BB for DT + ST + drain hole (guestimated). Cleaned up flux on DT-BB. Mitered TT-ST and TT-HT - could have used more length on this! large buts. lerger but to HT per Paul Brodie. 
 
-![](./images/practice_brazing_test.jpeg)
+![](./images/pratice_brazing_test.jpeg)
 
 ![](./images/holey_BB.jpeg)
 
 - 01/08: Filed ST notch to fit with brazing. Holes in HT for TT and DT; NS + brass fillet brazed the main triangle! (tackecd in Paul Brodie order: https://www.youtube.com/watch?v=lDHqMyBHAv0, NS all, and then brazed. do over on a section of TT-HT); faced and reamed HT; 
 
+![](./images/all_jiged_up.jpeg)
 
 - 02/08: Cut to length & mitered and slotted chainstays and added relief cut. Filled dropout inserts down. Cliquette went into hibernation. 
 
