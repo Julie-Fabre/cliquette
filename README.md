@@ -22,6 +22,7 @@ parts:
 - EBB
 - Gates sprockets and crankset 
 - Hubs
+- tube blocks https://www.thingiverse.com/thing:4557823
 
 good resources:
 - brazing: https://www.youtube.com/watch?v=OjRMbBl_Tbs, https://www.youtube.com/watch?v=fzI3QHfZPUs, https://www.youtube.com/watch?v=Y2CnJ9lmlQo, brompton: https://www.youtube.com/watch?v=G0zAORVqnaU
