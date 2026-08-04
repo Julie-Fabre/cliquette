@@ -1,4 +1,5 @@
-# cliquette <img width="50" height="35" alt="image" src="https://github.com/user-attachments/assets/5fc1aa46-d0dd-4e42-9a4e-417871007243" />
+# <img width="50" height="35" alt="image" src="https://github.com/user-attachments/assets/5fc1aa46-d0dd-4e42-9a4e-417871007243"/> cliquette <img width="50" height="35" alt="image" src="https://github.com/user-attachments/assets/90239c84-00cf-4fca-81c9-d5c4c3d6adb2" />
+
 
 made in grenoble with lots of love, sweat and flux.
 currently hibernating.
@@ -99,4 +100,5 @@ to figure out:
 - seat tube reamer / facer 
 - r-box (roh) 
 - dynamos
-- badge? name plate? paintjob?  
+- badge? name plate? paintjob?
+- rust protection inside of tubes: exyra long straws to put on end of rust protector spray can https://www.amazon.com/Replacement-Straws-Flexible-Plastic-Extension/dp/B09K3T496C?th=1, https://www.youtube.com/watch?v=3Yi6cjuqVHA
