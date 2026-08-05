@@ -4,6 +4,8 @@
 made in grenoble with lots of love, sweat and flux.
 currently hibernating.
 
+![](./images/hibernation_time.jpeg)
+
 parts: 
 
 - BB: McMaster 89955K601 Easy-to-Weld 4130 Alloy Steel Round Tube, 0.188" Wall Thickness, 2" OD, 1 Foot Long
@@ -77,7 +79,7 @@ stuff already done:
 
 ![](./images/main_triangle_and_chainstays.jpeg)
 
-![](./images/hibernation_time.jpeg)
+
 
 jig setup: 
 
