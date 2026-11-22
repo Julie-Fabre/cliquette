@@ -17,13 +17,32 @@ parts:
     - Chainstays ZON114OV425 x2 (ref 79)
     - HT HT2010 
     - Seatclamp ZSC300
-- Rear dropouts
+- Rear dropouts:
+  - right side (drive): 
+        - Polydrop QR. open up: solves belt opening. 
+        - OEM2 axle (drill a hole on the dropout to hole the oem rather than have monkey bone also because the polydrops i got are not iso). From https://www.rohloff.de/en/service/handbook/oem
+  - left side: 
+      - Adaptor gates - rolhoff beltline
+      - Gates sprocket
+      - Polydrop 
 - Front dropouts
+    - SON SL Contact Parts Kit with Cable Exit - 45 degree
+SON 28 SL 6-Bolt Disc Dynamo Hub - 9 x 100mm - Red
+Product code: 38808H36
+Holes: 36
+
 - Steerer
-- Headset
-- EBB
-- Gates sprockets and crankset 
-- Hubs
+- Headset: 
+        - Cane Creek Hellbender 70 Mid-Range Headset - Tapered - ZS44/28.6 | EC44/40 - red
+- EBB: PF30-EBB-BLK	Eccentric BB for PF30 & 24mm (Shimano) Cranks - Black
+- Gates sprockets and crankset:
+    - Gates CDX BLACK Rear Sprocket Rohloff -20T (78980556)
+	- Gates CDX Crank Set Direct Mount Rohloff Beltline - 50t (CDXKGA50DMR170)
+
+- Hubs:
+    - 36 hole OEM DB TS Rolhoff. O.L.D: 135
+ 
+- Wheel : 700, 40mm tire 
 - tube blocks https://www.thingiverse.com/thing:4557823
 - jig bits https://ideas2cycles.com/simple-framebuilding-jig/. more jig ideas: https://theframebuilders.com/bike-jigs/
 
