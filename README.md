@@ -10,21 +10,9 @@ a fillet brazed steel bike: Rohloff hub, Gates belt, SON dynamo, disc brakes, 70
 
 ## geometry
 
-adapted & inspired by the Trek Checkpoint SL 5, 54 cm: https://geometrygeeks.bike/bike/trek-checkpoint-sl5-2021/
+adapted & inspired by the Trek Checkpoint SL 5, 54 cm: https://bikeinsights.com/bike-geometries/640d62a8c4a612001b5131e1-2023-trek-bikes-checkpoint-sl-5-54-cm
 
-(the numbers below match the 2022-2023 listing: https://bikeinsights.com/bike-geometries/640d62a8c4a612001b5131e1-2023-trek-bikes-checkpoint-sl-5-54-cm)
 
-| | cliquette | Checkpoint SL 5, 54 cm |
-|---|---|---|
-| head angle | 71.8° | 71.8° |
-| seat angle | 73.2° | 73.2° |
-| BB drop | 76 mm | 76 mm |
-| chainstay | 435 mm | 435 mm |
-| front-centre | 617.8 mm | 617.4 mm |
-| fork rake | 45 mm | 45 mm |
-| fork axle-to-crown | 405 mm (+ 12 mm external lower headset cup) | not published, ~410 mm by calculation |
-| head tube | 130 mm | 125 mm |
-| stack | ~580 mm | 571 mm |
 
 cliquette numbers are from `bike_final_after_main_triangle_brazing.bcad`. Stack comes out ~8-11 mm higher than the Checkpoint (longer head tube + external lower headset cup) = a Checkpoint with ~10 mm of spacers. So: keep the fork at 405 / 45, zero spacers.
 
