@@ -17,6 +17,7 @@ parts:
     - Chainstays ZON114OV425 x2 (ref 79)
     - HT HT2010 
     - Seatclamp ZSC300
+- Steerer: Steerer, Steel, Tapered 1-1/8" to 1-1/4", 9" Long × 1 (firsthand framebuilding)
 - Rear dropouts:
   - right side (drive): 
         - Polydrop QR. open up: solves belt opening. 
