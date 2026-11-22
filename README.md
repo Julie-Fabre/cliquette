@@ -5,7 +5,8 @@ made in grenoble with lots of love, sweat and flux.
 currently hibernating.
 
 ![](./images/hibernation_time.jpeg)
-
+ 
+geometry adpated & inspired by checkpoint sl5 https://geometrygeeks.bike/bike/trek-checkpoint-sl5-2021/ 
 parts: 
 
 - BB: McMaster 89955K601 Easy-to-Weld 4130 Alloy Steel Round Tube, 0.188" Wall Thickness, 2" OD, 1 Foot Long
