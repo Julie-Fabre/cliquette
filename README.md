@@ -53,6 +53,7 @@ more drawings in [bike_geometry](./bike_geometry), part docs in [parts_docs](./p
         - Polydrop
         - OEM2 axle plate (drill a hole on the dropout to hold the oem rather than have monkey bone also because the polydrops i got are not iso). From https://www.rohloff.de/en/service/handbook/oem
 - Front dropouts:
+    - SON SL Stainless Steel Dropouts - Wide Braze Tab. Product code: 38069 (6 mm thick, 16 mm braze tab, 2 eyelets)
     - SON SL Contact Parts Kit with Cable Exit - 45 degree
 - Hubs:
     - rear: 36 hole OEM DB TS Rohloff. O.L.D: 135
@@ -163,7 +164,7 @@ then:
     - [eyelet bosses](https://framebuildersupply.com/products/eyelet-bosses-for-m5-bolts-stainless-10-100-packs) x 1 pack (mudguard stays at dropouts)
     - [rack bosses](https://framebuildersupply.com/products/rack-bosses-for-m5-bolts-stainless-steel-pack-of-10) x 1 pack (seatstays, fork blades)
 - disc brakes: IS tabs front and rear ([ISO tab](https://framebuildersupply.com/products/iso-disc-brake-tab-cast)), 160 mm rotors. Front = 6-bolt (SON), rear = Rohloff-specific 4-bolt rotor. Fit the tabs with the real hub + rotor + caliper in place.
-- fork: steel, disc, Columbus disc-rated blades, 405 axle-to-crown, 45 rake, SON SL dropouts angled forward (disc pushes the axle out of a QR dropout). Type still open, see below.
+- fork: steel, disc, Columbus disc-rated blades, 405 axle-to-crown, 45 rake, SON SL dropouts (wide 16 mm tab, slotted into the blade tip - matches the 16 mm tip of the pre-raked blades) angled forward (disc pushes the axle out of a QR dropout). Type still open, see below.
 - seat tube: ream after all brazing and before cutting the slot (adjustable reamer for 27.2 or a brake cylinder hone). No facing needed, file the top square.
 
 ## pending questions - fork, steerer, cane creek
@@ -179,7 +180,6 @@ then:
     - tapered 1-1/4" steerer -> Cane Creek 110-Series 52/33 conversion crown race (BAA0902A-01 / HD2461)
     - straight 1-1/8" steerer -> Cane Creek 52/30 reducer crown race (1.5" to 1-1/8")
     - listings say 10 / 40 / 110-Series, none names the Hellbender -> check the lower bearing is 52 mm OD / 40 mm ID, or ask Cane Creek.
-- SON SL dropouts: i only have the contact kit listed - do i have the dropouts? They are flat 6 mm plates with an 11 or 16 mm braze tab, slotted into the blade tip (16 mm tab matches the pre-raked blade tip).
 - brake calipers: cable or hydraulic? Depends on the Rohbox levers (pair of SRAM mechanical-shift road levers). Leaning cable: TRP Spyre or Paul Klamper, post mount on IS adapters, compressionless housing.
 
 ## to figure out
