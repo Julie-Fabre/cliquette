@@ -32,7 +32,6 @@ SON 28 SL 6-Bolt Disc Dynamo Hub - 9 x 100mm - Red
 Product code: 38808H36
 Holes: 36
 
-- Steerer
 - Headset: 
         - Cane Creek Hellbender 70 Mid-Range Headset - Tapered - ZS44/28.6 | EC44/40 - red
 - EBB: PF30-EBB-BLK	Eccentric BB for PF30 & 24mm (Shimano) Cranks - Black
